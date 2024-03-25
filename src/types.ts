@@ -5,4 +5,3 @@ export type AuthJwtPayload = {
   userId: UuidType,
   telegramId: number,
 }
-
