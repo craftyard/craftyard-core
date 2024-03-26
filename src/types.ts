@@ -5,3 +5,8 @@ export type AuthJwtPayload = {
   userId: UuidType,
   telegramId: number,
 }
+
+export type Location = {
+  latitude: number,
+  longitude: number,
+}
