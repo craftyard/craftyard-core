@@ -6,6 +6,11 @@ export type AuthJwtPayload = {
   telegramId: number,
 }
 
+export type JwtTokens = {
+  access: string,
+  refresh: string,
+}
+
 export type Location = {
   latitude: number,
   longitude: number,

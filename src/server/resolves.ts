@@ -36,9 +36,9 @@ export function getCyServerResolves(
   resolves?: Partial<CraftyardServerResolves>,
 ): CraftyardServerResolves {
   const defaultResolves: CraftyardServerResolves = {
-    logger: getLogger(),
-    runMode: getRunMode(),
-    jwtSecretKey: getJwtSecretKey(),
+    logger: resolves?.logger ?? getLogger(),
+    runMode: resolves?.runMode ?? getRunMode(),
+    jwtSecretKey: resolves?.jwtSecretKey ?? getJwtSecretKey(),
     jwtDecoder: new JwtDecoderImpl(0),
     jwtVerifier: new JwtVerifierImpl(),
     jwtCreator: new JwtCreatorImpl(),

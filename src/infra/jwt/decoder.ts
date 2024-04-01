@@ -3,7 +3,7 @@ import { uuidUtility } from 'rilata/src/common/utils/uuid/uuid-utility';
 import { AuthJwtPayload } from '../../types';
 
 export class JwtDecoderImpl extends BaseJwtDecoder<AuthJwtPayload> {
-  constructor(public expiredTimeShiftAsMs: number) {
+  constructor(protected expiredTimeShiftAsMs: number) {
     super();
   }
 
